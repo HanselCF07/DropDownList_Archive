@@ -1,0 +1,10 @@
+<h3>Información Academica</h3>
+Institución: UAC
+<br>
+Titulo Obtenido: Ingeniero
+<br>
+Ciudad:: Medellin
+<br>
+Fecha de Obtención: 2021-03-01
+<br>
+<hr>

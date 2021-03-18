@@ -7,26 +7,26 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Crear HV</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"/> 
-
 </head>
 <body>
     <form id="form1" runat="server">
         <div class="container">
             <div class="col-lg-6">
-                <br/> 
+                <br/>                 
+                <br/>
                 <h3>DATOS PERSONALES</h3>
                 <br/>               
                 <asp:Label ID="Label1" runat="server" Text="Nombre:"></asp:Label>
                 <br/>
                 <asp:TextBox ID="tb_1a" runat="server" class="form-control"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator" runat="server" ControlToValidate="tb_1a" ErrorMessage="Campo requerido">Debe ingresar nombre</asp:RequiredFieldValidator>                        
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator" runat="server" ControlToValidate="tb_1a" ErrorMessage="*" Display="Dynamic" ValidationExpression="([a-z]|[A-Z])*"> Digite solo letras</asp:RegularExpressionValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator" runat="server" ControlToValidate="tb_1a" ErrorMessage="*" Display="Dynamic" ValidationExpression="([\w]|[\s]){1,15}"> Digite solo letras</asp:RegularExpressionValidator>
                 <br/>
                 <asp:Label ID="Label2" runat="server" Text="Apellidos:"></asp:Label>
                 <br/>
                 <asp:TextBox ID="tb_1b" runat="server" class="form-control"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="tb_1b" ErrorMessage="Campo requerido">Debe ingresar apellido</asp:RequiredFieldValidator>                        
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="tb_1b" ErrorMessage="*" Display="Dynamic" ValidationExpression="([a-z]|[A-Z])*"> Digite solo letras</asp:RegularExpressionValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="tb_1b" ErrorMessage="*" Display="Dynamic" ValidationExpression="([\w]|[\s]){1,25}"> Digite solo letras</asp:RegularExpressionValidator>
                 <br/>
                 <asp:Label ID="Label3" runat="server" Text="Numero de Identificación:"></asp:Label>
                 <br/>
@@ -43,7 +43,7 @@
                 <br/>
                 <asp:TextBox ID="tb_1e" runat="server" class="form-control"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="tb_1e" ErrorMessage="Campo requerido">Debe ingresar Lugar de Nacimiento</asp:RequiredFieldValidator>                        
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="tb_1e" ErrorMessage="*" Display="Dynamic" ValidationExpression="([a-z]|[A-Z])*"> Digite solo letras</asp:RegularExpressionValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="tb_1e" ErrorMessage="*" Display="Dynamic" ValidationExpression="([\w]|[\s]){1,25}"> Digite solo letras</asp:RegularExpressionValidator>
                 <br/>
                 <asp:Label ID="Label6" runat="server" Text="Estado Civil:"></asp:Label>
                 <br/>
@@ -64,7 +64,7 @@
                 <br/>
                 <asp:TextBox ID="tb_1g" runat="server" class="form-control"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="tb_1g" ErrorMessage="Campo requerido">Debe ingresar Lugar de Residencia</asp:RequiredFieldValidator>                        
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="tb_1g" ErrorMessage="*" Display="Dynamic" ValidationExpression="([a-z]|[A-Z])*"> Digite solo letras</asp:RegularExpressionValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="tb_1g" ErrorMessage="*" Display="Dynamic" ValidationExpression="([\w]|[\s]){1,25}"> Digite solo letras</asp:RegularExpressionValidator>
                 <br/>               
                 <asp:Label ID="Label9" runat="server" Text="Telefono:"></asp:Label>
                 <br/>
@@ -89,13 +89,13 @@
                 <br/>
                 <asp:TextBox ID="tb_2b" runat="server" class="form-control"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="tb_2b" ErrorMessage="Campo requerido">Debe ingresar Titulo Obtenido</asp:RequiredFieldValidator>                                        
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ControlToValidate="tb_2b" ErrorMessage="*" Display="Dynamic" ValidationExpression="([a-z]|[A-Z])*"> Digite solo letras</asp:RegularExpressionValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ControlToValidate="tb_2b" ErrorMessage="*" Display="Dynamic" ValidationExpression="([\w]|[\s]){1,25}"> Digite solo letras</asp:RegularExpressionValidator>
                 <br/>
                 <asp:Label ID="Label13" runat="server" Text="Ciudad:"></asp:Label>
                 <br/>
                 <asp:TextBox ID="tb_2c" runat="server" class="form-control"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="tb_2c" ErrorMessage="Campo requerido">Debe ingresar Ciudad</asp:RequiredFieldValidator>                        
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator7" runat="server" ControlToValidate="tb_2c" ErrorMessage="*" Display="Dynamic" ValidationExpression="([a-z]|[A-Z])*"> Digite solo letras</asp:RegularExpressionValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator7" runat="server" ControlToValidate="tb_2c" ErrorMessage="*" Display="Dynamic" ValidationExpression="([\w]|[\s]){1,25}"> Digite solo letras</asp:RegularExpressionValidator>
                 <br/> 
                 <asp:Label ID="Label14" runat="server" Text="Fecha de Obtención:"></asp:Label>
                 <br/>
@@ -119,13 +119,13 @@
                 <br/>
                 <asp:TextBox ID="tb_3c" runat="server" class="form-control" Type="Number"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server" ControlToValidate="tb_3c" ErrorMessage="Campo requerido">Debe ingresar Tiempo</asp:RequiredFieldValidator>                        
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator8" runat="server" ControlToValidate="tb_3c" ErrorMessage="*" Display="Dynamic" ValidationExpression="([0-9]){6,15}"> Digite solo numeros</asp:RegularExpressionValidator>             
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator8" runat="server" ControlToValidate="tb_3c" ErrorMessage="*" Display="Dynamic" ValidationExpression="([0-9]){0,15}"> Digite solo numeros</asp:RegularExpressionValidator>             
                 <br/>
                 <asp:Label ID="Label18" runat="server" Text="Nombre del Jefe:"></asp:Label>
                 <br/>
                 <asp:TextBox ID="tb_3d" runat="server" class="form-control"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator16" runat="server" ControlToValidate="tb_3d" ErrorMessage="Campo requerido">Debe ingresar nombre del jefe</asp:RequiredFieldValidator>                        
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator9" runat="server" ControlToValidate="tb_3d" ErrorMessage="*" Display="Dynamic" ValidationExpression="([a-z]|[A-Z])*"> Digite solo letras</asp:RegularExpressionValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator9" runat="server" ControlToValidate="tb_3d" ErrorMessage="*" Display="Dynamic" ValidationExpression="([\w]|[\s]){1,35}"> Digite solo letras</asp:RegularExpressionValidator>
                 <br/>
                 <asp:Label ID="Label19" runat="server" Text="Telefono:"></asp:Label>
                 <br/>
@@ -137,7 +137,7 @@
                 <br/>
                 <asp:TextBox ID="tb_3f" runat="server" class="form-control"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator18" runat="server" ControlToValidate="tb_3f" ErrorMessage="Campo requerido">Debe ingresar Ciudad</asp:RequiredFieldValidator>                        
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator11" runat="server" ControlToValidate="tb_3f" ErrorMessage="*" Display="Dynamic" ValidationExpression="([a-z]|[A-Z])*"> Digite solo letras</asp:RegularExpressionValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator11" runat="server" ControlToValidate="tb_3f" ErrorMessage="*" Display="Dynamic" ValidationExpression="([\w]|[\s]){1,25}"> Digite solo letras</asp:RegularExpressionValidator>
                 <br/> 
                 <hr style="border:1px;"/>
                 <h3>REFERENCIAS PERSONALES</h3>
@@ -146,13 +146,13 @@
                 <br/>
                 <asp:TextBox ID="tb_4a" runat="server" class="form-control"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator19" runat="server" ControlToValidate="tb_4a" ErrorMessage="Campo requerido">Debe ingresar nombre</asp:RequiredFieldValidator>                        
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator12" runat="server" ControlToValidate="tb_4a" ErrorMessage="*" Display="Dynamic" ValidationExpression="([a-z]|[A-Z])*"> Digite solo letras</asp:RegularExpressionValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator12" runat="server" ControlToValidate="tb_4a" ErrorMessage="*" Display="Dynamic" ValidationExpression="([\w]|[\s]){1,25}"> Digite solo letras</asp:RegularExpressionValidator>
                 <br/>
                 <asp:Label ID="Label22" runat="server" Text="Ocupacion:"></asp:Label>
                 <br/>
                 <asp:TextBox ID="tb_4b" runat="server" class="form-control"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator20" runat="server" ControlToValidate="tb_4b" ErrorMessage="Campo requerido">Debe ingresar ocupación</asp:RequiredFieldValidator>                        
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator13" runat="server" ControlToValidate="tb_4b" ErrorMessage="*" Display="Dynamic" ValidationExpression="([a-z]|[A-Z]|[0-9])*"> Digite Ocupación [a-Z][0-9]</asp:RegularExpressionValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator13" runat="server" ControlToValidate="tb_4b" ErrorMessage="*" Display="Dynamic" ValidationExpression="([\w]|[\s]){1,25}"> Digite Ocupación</asp:RegularExpressionValidator>
                 <br/>
                 <asp:Label ID="Label23" runat="server" Text="Telefono:"></asp:Label>
                 <br/>
@@ -164,7 +164,7 @@
                 <br/>
                 <asp:TextBox ID="tb_5d" runat="server" class="form-control"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator22" runat="server" ControlToValidate="tb_5d" ErrorMessage="Campo requerido">Debe ingresar Ciudad</asp:RequiredFieldValidator>                        
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator15" runat="server" ControlToValidate="tb_5d" ErrorMessage="*" Display="Dynamic" ValidationExpression="([a-z]|[A-Z])*"> Digite solo letras</asp:RegularExpressionValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator15" runat="server" ControlToValidate="tb_5d" ErrorMessage="*" Display="Dynamic" ValidationExpression="([\w]|[\s]){1,25}"> Digite solo letras</asp:RegularExpressionValidator>
                 <br/>
                 <hr style="border:1px;"/>
                 <br/> 
@@ -172,10 +172,14 @@
                 <br/>
                 <asp:TextBox ID="tb_5e" runat="server" class="form-control"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator23" runat="server" ControlToValidate="tb_5e" ErrorMessage="Campo requerido">Debe ingresar Firma</asp:RequiredFieldValidator>                        
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator16" runat="server" ControlToValidate="tb_5e" ErrorMessage="*" Display="Dynamic" ValidationExpression="([a-z]|[A-Z])*"> Digite solo letras</asp:RegularExpressionValidator>
-
-                <br/><br/>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator16" runat="server" ControlToValidate="tb_5e" ErrorMessage="*" Display="Dynamic" ValidationExpression="([\w]|[\s]){1,25}"> Digite solo letras</asp:RegularExpressionValidator>
+                <br/>
+                <asp:Label ID="Label26" runat="server" Text=""></asp:Label>
+                <br/>
                 <asp:Button ID="Button1" class="btn btn-success marging" runat="server" OnClick="Button_Click" Text="Enviar" />
+                <br/><br/>
+                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Default.aspx">regresar</asp:HyperLink>
+                <br/><br/>
             </div>
         </div>
     </form>

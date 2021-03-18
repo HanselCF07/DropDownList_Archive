@@ -1,0 +1,22 @@
+<h3>Información Personal</h3>
+Nombre: Hansel
+<br>
+Apellido: Castro Florez
+<br>
+No Identificación: 1143158494
+<br>
+Fecha de Nacimiento: 2000-11-07
+<br>
+Lugar de Nacimiento: Barranquilla
+<br>
+Estado Civil: CASADO
+<br>
+Dirección: CLL 87B #64-98
+<br>
+Ciudad: Barranquilla
+<br>
+Telefono: 3005343933
+<br>
+Correo: hansel@hotmail.com
+<br>
+<hr>
